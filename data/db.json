@@ -1,0 +1,41 @@
+{
+    "jobs": [
+        {
+            "id":1,
+            "title": "Receptionist", 
+            "body": "lorem"
+        },
+        {
+            "id":2,
+            "title": "Receptionist 2",  
+            "body": "lorem"
+        },
+        {
+            "id":3,
+            "title": "Receptionist 3",  
+            "body": "lorem"
+        }
+        
+    ], 
+    
+    "education": [
+        {
+            "id":1,
+            "title": "Front end developer",  
+            "body": "lorem"
+        },
+        {
+            "id":2,
+            "title": "någon utbildning",  
+            "body": "lorem"
+        },
+        {
+            "id":3,
+            "title": "gymnasiet",  
+            "body": "lorem"
+        }
+
+    ]
+
+}
+

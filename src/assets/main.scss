@@ -1,0 +1,25 @@
+@import "@/assets/_variables.scss";
+@import "@/assets/_navbar.scss";
+@import '~bootstrap/dist/css/bootstrap.css';
+
+// Fonts
+@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@100;200;300;400;500&display=swap');
+
+//Icons
+@import 'https://unpkg.com/ionicons@4.2.2/dist/css/ionicons.min.css';
+
+
+
+// Styling
+
+*{
+    font-family: 'Heebo', sans-serif;
+
+    .error{
+        color: $warning;
+        font-size: 14px;
+        margin: 16px 0;;
+    }
+    
+
+}
