@@ -1,5 +1,6 @@
 import firebase from 'firebase/app'
 import 'firebase/firestore'
+import 'firebase/storage'
 
 
 // For Firebase JS SDK v7.20.0 and later, measurementId is optional
@@ -17,6 +18,7 @@ const firebaseConfig = {
 
   // init firestore Services. this is how i get collections from my database
   const projectFirestore = firebase.firestore()
+  const projectStorage = firebase.storage()
 
 
-  export { projectFirestore }
+  export { projectFirestore, projectStorage }

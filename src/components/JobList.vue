@@ -4,6 +4,7 @@
         <SingleJobs :job="job" />
       </div>
   </div>
+
 </template>
 
 <script>
@@ -12,13 +13,7 @@ import SingleJobs from './SingleJobs'
 
 export default {
   components: { SingleJobs },
-    props: ['job'],
-    setup(props){
-        onMounted(() => {
-
-        })
-
-    }
+    props: ['job']
 
 }
 </script>
