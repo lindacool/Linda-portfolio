@@ -17,19 +17,16 @@ const routes = [
   {
     path: '/about',
     name: 'About',
-    icon: 'ion-ios-business',
     component: About
   },
   {
     path: '/resume',
     name: 'Resume',
-    icon: 'ion-ios-bonfire',
     component: Resume
   },
   {
     path: '/work',
     name: 'Work',
-    icon: 'ion-ios-briescase',
     component: Work
   },
   {

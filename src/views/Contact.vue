@@ -1,47 +1,91 @@
 <template>
-
+<div class="background">
   <div class="row">
-      <div class="left col-sm-12 col-md-7 col-lg-6 text-center">
-        <span>Contact</span>
+      <div class="left col-sm-12 col-md-6 col-lg-6 d-flex p-0 m-0">
+        <div class="contact m-0 ">Contact</div>
       </div>
+      <div class="styling-box"></div>
 
-      <div class="right col-sm-12">
-        <span>Info</span>
+      <div class="right col-sm-12 col-md-6 col-lg-6">
+        <div class="contact-me">
+          <div class="uppercase">Contact Details</div>
+          <div class="contact">076-8222455</div>
+          <div class="contact">Stockholm</div>
+          <div class="contact">Linda.andersson@Medinstitutet.se</div>
+        
+        </div>
+       
       </div>
   
+  </div>
   </div>
 </template>
 
 <script>
 export default {
 
+
+
 }
 </script>
 
 <style lang="scss" scoped>
 
-.row {
-    background: rgb(47, 47, 47);
+.background {
+    background-image: url('../assets/img/linda.jpeg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
     height: 100vh;
-    padding: 0px;
+    width: 100%;
+    
+      .left{
+       
 
-    .left{
-        margin-top: 150px;
+        .contact{
+          padding-top:200px;  
+          padding-left: 30%;
+          color:white;
+          font-size: 70px;
+          font-weight: 200;
 
-        span{
-            font-size: 70px;
-            margin-left: 30px;
-            font-weight: 200;
-            color: white;
         }
+        
+      }
+      .right{
+         .contact-me{
+           .uppercase
+           {
+            text-transform: uppercase;
+           }
+          
+          font-weight: 200;
+          color:white;
+          padding-left: 30%;
+          
+
+          .contact{
+            margin-top: 10px;
+            font-size: 12px;
+
+          }
+
+         @include medium {
+           padding-top:330px;  
+               
+            }
+         }
+      }
+
+      .styling-box{
+       
+        border:white solid 1px;
+        position: absolute;
+        width: 500px;
+        height: 400px;
+      }
+
     
-    }
-    
-     .right{
-         visibility: hidden;
-         
-      }  
-      
 }
 
 </style>

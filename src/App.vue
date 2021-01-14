@@ -5,7 +5,7 @@
   :image-Path="require('./assets/img/cirkel.png')"
   backgorund="#fff"
   />    
-  <ProgrammicNavigation />
+ 
 
 </div>
 <!-- // Fade in animation -->
@@ -21,21 +21,27 @@
 
 <script>
 import ProgrammicNavigation from './components/ProgrammicNavigation.vue'
+import Footer from './components/Footer'
 import Navbar from './components/Navbar.vue'
 export default {
-  components: { Navbar, ProgrammicNavigation },
+  components: { Navbar, Footer , ProgrammicNavigation },
 
   data: () => ({
     navLinks: [
       {
+        text: 'Home',
+        path: '/',
+        icon: 'ion-ios-home'
+      },
+      {
         text: 'About',
         path: '/about',
-        icon: 'ion-ios-bussniess'
+        icon: 'ion-ios-person'
       },
       {
         text: 'Resume',
         path: '/resume',
-        icon: 'ion-ios-bonfire'
+        icon: 'ion-ios-code'
       },
        {
         text: 'Work',
@@ -45,7 +51,7 @@ export default {
        {
         text: 'Contact',
         path: '/contact',
-        icon: 'ion-ios-megaphone'
+        icon: 'ion-ios-call'
       },
     ]
   })

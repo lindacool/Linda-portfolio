@@ -1,7 +1,8 @@
 <template>
 <div class="row">
       <div class="left col-sm-12 col-md-7 col-lg-6 text-center">
-        <div class="spin text-center"></div>
+        <div class="spin text-center">
+        </div>
       </div>
   </div>
  

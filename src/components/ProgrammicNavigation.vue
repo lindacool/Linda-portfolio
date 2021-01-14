@@ -25,8 +25,11 @@ export default {
 <style lang="scss" scoped>
 
 .button-div{
-     position:absolute;
-     button{
+     position:relative;
+     justify-content: flex-end;
+     align-items: flex-end;
+     
+    button{
     margin: 0 10px;
     padding: 10px;
     border: none;

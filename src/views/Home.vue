@@ -28,11 +28,6 @@ export default {
 </script>
 
 <style lang="scss" scoped>
- @mixin large {
-    @media (min-width: 1200px) {
-        @content;
-    }
-}
    .container-fluid{
         background: rgb(0, 0, 0);;
 

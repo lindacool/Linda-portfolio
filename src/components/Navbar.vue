@@ -2,9 +2,11 @@
 <div id="nav">
     <!-- ref tells vue that i want to have a reference in memory to this DOM-element. I can accent whenever i want -->
     <ul ref="nav">
-        <figure class="image-logo" @click="toggleNav">
+            <figure class="image-logo" @click="toggleNav">
             <img :src="imagePath" alt="LA-logo" class="ham-meny">
-        </figure>
+            </figure>
+
+        
         <div class="nav-links">
         <li v-for="(link,index) in navLinks" 
         :key="index">
@@ -36,20 +38,21 @@ export default {
 </script>
 
 <style lang="scss">
+
 #nav{
+            
         ul{
+            position: absolute;
+            box-shadow: 1px 1px 1px #ccc;
+            width: 190px;
+            height: 100%;
             margin-block-start: 0;
             margin-block-end: 0;
-            padding-inline-start: 0;
-            height: 100%;
-            box-shadow: 1px 1px 1px #ccc;
-            position: absolute;
-            width: 190px;
-            flex-direction: column;    
+            padding-inline-start: 0;   
             background-color: white;
-            left: -140px;
+            left: -150px;
             transition: 300ms ease-in;
-            top: 0px;
+            top: 50px;
             z-index:1;
     
                 &.active{
@@ -65,18 +68,26 @@ export default {
                    
     }
     
-            figure{
+    
+      
+        figure{
                 cursor: pointer;
+                position: fixed;
+                z-index: 9999;
+                top:5px;
+                left: 1px;
+                
+                
     
                 .ham-meny{
                     height:40px;
-                    width: 40px;
-                    position: fixed;
-                    top:10px;
-                    left: 10px;
+                    width: 40px;   
+                    
                     
                 }
             }
+    
+            
         
             :hover{
                 color: gray;
