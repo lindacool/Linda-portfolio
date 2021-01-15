@@ -8,15 +8,14 @@
 
       <div class="right col-sm-12 col-md-6 col-lg-6">
         <div class="contact-me">
-          <div class="uppercase">Contact Details</div>
-          <div class="contact">076-8222455</div>
+          
+          <div class="uppercase">Contact Details
+          </div>
+          <div class="contact"><i class="fas fa-phone"></i> 076-8222455</div>
           <div class="contact">Stockholm</div>
-          <div class="contact">Linda.andersson@Medinstitutet.se</div>
-        
+          <div class="contact">Linda.andersson@Medinstitutet.se</div> 
         </div>
-       
       </div>
-  
   </div>
   </div>
 </template>
@@ -43,15 +42,15 @@ export default {
        
 
         .contact{
-          padding-top:200px;  
+          padding-top:300px;  
           padding-left: 30%;
           color:white;
-          font-size: 70px;
+          font-size: 60px;
           font-weight: 200;
-
         }
         
       }
+      
       .right{
          .contact-me{
            .uppercase
@@ -71,18 +70,27 @@ export default {
           }
 
          @include medium {
-           padding-top:330px;  
+           padding-top:400px;  
                
             }
          }
       }
 
       .styling-box{
+
+
+            @include medium {
+             
+              border-right:white solid 1px;
+              border-bottom: white solid 1px;
+              position: absolute;
+              width: 500px;
+              height: 400px;
+               
+            }
        
-        border:white solid 1px;
-        position: absolute;
-        width: 500px;
-        height: 400px;
+     
+
       }
 
     

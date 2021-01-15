@@ -6,6 +6,9 @@
 // Fonts
 @import url('https://fonts.googleapis.com/css2?family=Heebo:wght@100;200;300;400;500&display=swap');
 
+@import url('https://fonts.googleapis.com/css?family=Spartan:100,200,300,400,500,600,700,800,900&display=swap');
+
+
 //Icons
 @import 'https://unpkg.com/ionicons@4.2.2/dist/css/ionicons.min.css';
 
@@ -14,8 +17,10 @@
 // Styling
 
 *{
-    font-family: 'Heebo', sans-serif;
+    font-family: 'Spartan', sans-serif;
+    font-weight: 200;
 
+    font-style: normal;
     .error{
         color: $warning;
         font-size: 14px;

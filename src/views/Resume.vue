@@ -1,8 +1,8 @@
 <template>
-
+ <div class="background">
   <div class="row">
-      <div class="left col-sm-12 col-md-7 col-lg-6 text-center ">
-          <div v-if="error">{{error}}</div>
+      <div class="left col-sm-12 col-md-6 col-lg-6 d-flex text-center p-0 m-0">
+         <div v-if="error">{{error}}</div>
           <div v-if="job.length">
               <JobList :job="job" />
           </div>
@@ -10,39 +10,45 @@
               <Spinner />
           </div>
 
-      </div>
-
-      <div class="left col-sm-12 col-md-7 col-lg-6 text-center ">
           <div v-if="education.length">
-              <EducationList :education="education" />
-          </div>
-          <div v-else> 
-              <Spinner />
+            <div v-for="education in educations" :key="education.id">
+               <SingleEducation :education="education" />
+            </div>
           </div>
       </div>
-</div>
+  </div>
+  </div>
+
 </template>
 
 <script>
 import JobList from '../components/JobList'
 import getJobs from '../composables/getJobs'
 import Spinner from'../components/Spinner.vue'
-import getEducation from '../composables/getEducation'
-import EducationList from '../components/EducationList'
+import SingleEducation from '../components/SingleEducation'
+
 
 export default {
-    components: { JobList, Spinner , EducationList}, 
+    components: { JobList, Spinner , SingleEducation }, 
+
+    data() {
+        return{
+            education: []
+        }
+    },
+    mounted(){
+        fetch('http://localhost:3000/educations')
+        .then(res => res.json())
+        .then(data =>  this.education = data)
+        
+    },
     
     setup() {
-
-        const { education } = getEducation()
        const { job, error, load } = getJobs()
-       
-       
 
         load()
 
-        return { job , error , education }
+        return { job , error }
     }
 
 }

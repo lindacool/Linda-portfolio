@@ -3,7 +3,7 @@
     <!-- ref tells vue that i want to have a reference in memory to this DOM-element. I can accent whenever i want -->
     <ul ref="nav">
             <figure class="image-logo" @click="toggleNav">
-            <img :src="imagePath" alt="LA-logo" class="ham-meny">
+            <img :src="imagePath" alt="LA-logo" class="menu-btn">
             </figure>
 
         
@@ -40,6 +40,10 @@ export default {
 <style lang="scss">
 
 #nav{
+
+    height: 40px;
+    width: 100%;
+    z-index:1;
             
         ul{
             position: absolute;
@@ -52,7 +56,7 @@ export default {
             background-color: white;
             left: -150px;
             transition: 300ms ease-in;
-            top: 50px;
+            top: 40px;
             z-index:1;
     
                 &.active{
@@ -73,13 +77,12 @@ export default {
         figure{
                 cursor: pointer;
                 position: fixed;
-                z-index: 9999;
-                top:5px;
+                z-index: 1;
+                top:1px;
                 left: 1px;
-                
-                
+
     
-                .ham-meny{
+                .menu-btn{
                     height:40px;
                     width: 40px;   
                     
