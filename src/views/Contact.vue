@@ -11,7 +11,7 @@
           
           <div class="uppercase">Contact Details
           </div>
-          <div class="contact"><i class="fas fa-phone"></i> 076-8222455</div>
+          <div class="contact"><span class="material-icons">face</span>076-8222455</div>
           <div class="contact">Stockholm</div>
           <div class="contact">Linda.andersson@Medinstitutet.se</div> 
         </div>

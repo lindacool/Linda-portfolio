@@ -16,7 +16,7 @@ const getJobs = () => {
                 setTimeout(resolve, 2000)
             })
             // Here i grab the data from my database firestore. I connect to my collection.
-            const res = await projectFirestore.collection('education').get()
+            const res = await projectFirestore.collection('jobs').get()
             // cycle through documents and for each of those documents get the data and add it to my job = ref([]) array
             job.value = res.docs.map(doc => {
                 return { ...doc.data(), id: doc.id} // This grabs the properties and spreds them as properties and values into new object. and i get the id so i can print them. 

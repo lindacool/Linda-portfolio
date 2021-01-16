@@ -1,35 +1,47 @@
 <template>
-  <div class="project">
-      <div class="actions">
-          <h3 @click="showDetails = !showDetails">{{education.title}}</h3>
+
+    <div class="row">
+      <div @click="showBody = !showBody" class="col-sm-12 col-md-7 col-lg-6 text-center project">
+        <div class="title">{{education.title}}</div>
+        <!-- <p> {{snippet}}</p> -->
+        <div class="icons">
+            <span class="material-icons">
+            keyboard_arrow_down
+            </span>
+        </div>
+        <div v-if="showBody" class="body">
+            <p class="body">{{education.body}}</p>
+        </div>
       </div>
-      <div v-if="showDetails" class="details">
-          <p>{{education.details}}</p>
-      </div>
+
+  
   </div>
+    
 </template>
 
 <script>
+import { computed } from 'vue'
+
 export default {
     props: ['education'],
+
+    setup(props) {
+        const snippet = computed(() => {
+            return props.education.body.substring(0,30) + '....'
+        })
+
+        return { snippet }
+    }, 
     data() {
-        return {
-            showDetails: false
-        }
-    }
+            return{
+                showBody: false
+            }
+        },
 
 }
 </script>
 
-<style>
-.project {
-    margin: 20px auto;
-    background: white;
-    padding: 10px 20px;
-    border-radius:  4åx;
-    box-shadow: 1px 2px 3px rgba(0,0,0,0.05);
-    border-left: 4px solid red;
-    cursor: pointer;
-}
+<style lang="scss" scope>
+
 
 </style>
