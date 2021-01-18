@@ -62,15 +62,21 @@ export default {
                background-color: rgb(130, 130, 130);
                background-blend-mode: multiply;
                text-align: center;
+               position: relative;
+               transition: transform 2s;
+
+               & :hover {
+                 transform: scale(1.2)
+               }
             }
+
           
             .work{
 
               margin: 1px;
               margin-left: 15%;
-              
               height: 300px;
-              width: 320px;
+              width: 300px;
               
 
                 @include medium {

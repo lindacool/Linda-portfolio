@@ -2,9 +2,11 @@
 <div id="nav">
     <!-- ref tells vue that i want to have a reference in memory to this DOM-element. I can accent whenever i want -->
     <ul ref="nav">
-            <figure class="image-logo" @click="toggleNav">
-            <img :src="imagePath" alt="LA-logo" class="menu-btn">
-            </figure>
+            <div class="image-logo" @click="toggleNav">
+            <div class="ham"></div>
+            <div class="ham-short"></div>
+            <div class="ham"></div>
+            </div>
 
         
         <div class="nav-links">
@@ -44,6 +46,7 @@ export default {
     height: 40px;
     width: 100%;
     z-index:1;
+    
             
         ul{
             position: absolute;
@@ -72,21 +75,29 @@ export default {
                    
     }
     
-    
       
-        figure{
+        .image-logo{
                 cursor: pointer;
                 position: fixed;
                 z-index: 1;
                 top:1px;
                 left: 1px;
 
-    
-                .menu-btn{
-                    height:40px;
-                    width: 40px;   
-                    
-                    
+                .ham {
+                
+                width: 40px;
+                margin: 7px 0px 7px 0px;
+                border-bottom: 3px solid;
+                border-radius: 25px;
+
+            }
+            .ham-short {
+                width: 30px;
+                margin: 7px 0px 7px 0px;
+                border-bottom: 3px solid;
+                border-radius: 25px;
+
+            }
                 }
             }
     
@@ -114,6 +125,5 @@ export default {
             }
     
         }
-    }
 
 </style>

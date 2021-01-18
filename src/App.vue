@@ -2,7 +2,7 @@
 <div class="container-fluid m-0 p-0">
   <Navbar 
   :nav-links="navLinks"
-  :image-Path="require('./assets/img/cirkel.png')"
+  :image-Path="require('./assets/img/ham.png')"
   backgorund="#fff"
   />    
  
@@ -26,6 +26,7 @@ import Navbar from './components/Navbar.vue'
 export default {
   components: { Navbar, Footer , ProgrammicNavigation },
 
+  // Navliks to my navbar
   data: () => ({
     navLinks: [
       {

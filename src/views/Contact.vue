@@ -11,10 +11,12 @@
           
           <div class="uppercase">Contact Details
           </div>
-          <div class="contact"><span class="material-icons">face</span>076-8222455</div>
+          <div class="contact">076-8222455</div>
           <div class="contact">Stockholm</div>
           <div class="contact">Linda.andersson@Medinstitutet.se</div> 
         </div>
+
+
       </div>
   </div>
   </div>
@@ -32,6 +34,7 @@ export default {
 
 .background {
     background-image: url('../assets/img/linda.jpeg');
+    background-color: rgb(158, 157, 157);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -47,6 +50,18 @@ export default {
           color:white;
           font-size: 60px;
           font-weight: 200;
+
+
+            @include medium {
+              padding-top: 400px;
+              padding-left: 40%;
+               
+            }
+            @include large {
+              padding-top: 300px;
+              padding-left: 40%;
+               
+            }
         }
         
       }
@@ -56,9 +71,9 @@ export default {
            .uppercase
            {
             text-transform: uppercase;
+            padding: 20px 0px 10px 0px;
            }
           
-          font-weight: 200;
           color:white;
           padding-left: 30%;
           
@@ -70,24 +85,37 @@ export default {
           }
 
          @include medium {
-           padding-top:400px;  
+           padding-top:500px;  
                
             }
+         @include large {
+           padding-top:260px;  
+               
+            }
+
+            
          }
       }
 
       .styling-box{
 
 
-            @include medium {
-             
-              border-right:white solid 1px;
-              border-bottom: white solid 1px;
-              position: absolute;
-              width: 500px;
-              height: 400px;
+            // @include medium {
+            //   border-right:white solid 1px;
+            //   border-bottom: white solid 1px;
+            //   position: absolute;
+            //   margin: 20px 0px 0px 70px;
+            //   width: 500px;
+            //   height: 500px;
                
-            }
+            // }
+            // @include large {
+            //   width: 600px;
+            //   height: 400px;
+               
+            // }
+
+            
        
      
 
