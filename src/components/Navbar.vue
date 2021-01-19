@@ -53,7 +53,6 @@ export default {
             margin-block-start: 0;
             margin-block-end: 0;
             padding-inline-start: 0;   
-            color: rgba(247, 244, 244);
             left: -145px;
             transition: 300ms ease-in;
             top: 7px;
@@ -74,7 +73,7 @@ export default {
     }
 
     .material-icons{
-        color: rgb(191, 190, 190);
+        color: rgb(25, 24, 24);
          margin: 2px;
          font-size: 28px;
 
@@ -91,7 +90,7 @@ export default {
                 .menu-btn{
                     cursor: pointer;
                     border-radius: 50%;
-                    border: solid 1px rgb(191, 190, 190);
+                    border: solid 1px rgb(25, 24, 24);;
                     background: none;
                     height: 45px;
                     width: 45px;
@@ -122,7 +121,7 @@ export default {
                 margin: 10px 5px 10px 10px;
                 justify-content: space-between;
                 font-weight: 200;
-                color: rgb(191, 190, 190);
+                color: rgb(25, 24, 24);;
 
                 @include medium {
                     font-size: 23px;
@@ -132,7 +131,7 @@ export default {
                 i{
                     margin-right: 7px;
                     font-size: 20px;
-                    color: rgb(191, 190, 190);
+                    color: rgb(25, 24, 24);
 
                     @include medium {
                         font-size: 25px;
