@@ -25,9 +25,11 @@ import Footer from './components/Footer'
 import Navbar from './components/Navbar.vue'
 export default {
   components: { Navbar, Footer , ProgrammicNavigation },
+  
 
   // Navliks to my navbar
   data: () => ({
+
     navLinks: [
       {
         text: 'Home',
@@ -56,7 +58,9 @@ export default {
       },
     ]
   })
+  
 }
+
 </script>
 
 <style>

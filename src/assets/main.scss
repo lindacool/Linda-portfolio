@@ -8,19 +8,24 @@
 
 @import url('https://fonts.googleapis.com/css?family=Spartan:100,200,300,400,500,600,700,800,900&display=swap');
 
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display&display=swap');
 
 //Icons
 @import 'https://unpkg.com/ionicons@4.2.2/dist/css/ionicons.min.css';
 
 
 
+
+
 // Styling
 
 *{
-    font-family: 'Spartan', sans-serif;
-    font-weight: 200;
 
-    font-style: normal;
+    .container-fluid{
+    background:#e0e0e2;;
+    }
     .error{
         color: $warning;
         font-size: 14px;

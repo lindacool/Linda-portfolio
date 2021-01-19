@@ -77,17 +77,17 @@ export default {
 
       .left{
       
-        .contact{
-          padding-top:30px;  
-          padding-left: 90px;
+        .contact{ 
+          padding: 10px 0 10px 180px;
           color: $workText;
-          font-size: 70px;
-          font-weight: 200;
+          font-size: 22px;
           text-transform: uppercase;
+          font-family: 'Noto Serif', serif;
+          font-weight: 200;
 
           @include medium {
-            font-size: 120px;
-            padding-left: 200px;
+            font-size: 30px;
+             padding: 10px 0 10px 368px;
             
             }
              @include large {
@@ -105,6 +105,7 @@ export default {
             text-align: center;
              border: none;
             margin: 0px;
+             
 
                @include medium {
                  flex-direction: row;
@@ -121,7 +122,6 @@ export default {
                border: none;
                transition: transform 2s;
                margin-left:70px;
-           
                margin-top: 5px;
                 
 
@@ -135,13 +135,13 @@ export default {
                   height: 450px;
                    margin: 0px;
                   padding: 2px;
-               
-            
             
             }
 
                img{
                background-size: cover;
+               box-shadow: 1px 2px 3px rgba(0,0,0, 0.5);
+               border-radius: 2%;
                width: 300px;
                height: 250px;
               
@@ -175,10 +175,18 @@ export default {
                 top: 20px;
                 left: 20px;
                 bottom: 20px;
-                right: 20px;
+                right: 50px;
                 background: rgba(0,0,0,0.5);
                 opacity: 0;
                 transition:  .5s;
+
+                 @include medium {
+                   margin-left: 20px;
+                    right: 0px;
+              }
+                 @include large {
+                    right: 20px;
+              }
 
               }
                 

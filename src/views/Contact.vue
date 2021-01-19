@@ -48,6 +48,8 @@ export default {
        
 
         .contact{
+          font-family: $fontFamily;
+          font-size: 400;
           padding-top:300px;  
           padding-left: 30%;
           color:white;

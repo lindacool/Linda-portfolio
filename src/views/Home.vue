@@ -8,11 +8,12 @@
         <p class="Name"> {{title}}</p>
        <div class="line"></div>
         <p class="education">{{body}}</p>
+       <vue-typer text='Hello'></vue-typer>
       </div>
   
       <div class="video-container">
       <video autoplay loop muted id="videoBG">
-        <source src="../assets/video/hav.mp4" type="video/mp4" >
+        <source src="../assets/video/sun.mp4" type="video/mp4" >
       </video>
       </div>
       </div>
@@ -22,6 +23,8 @@
 
 
 <script>
+
+
 export default {
     data() {
         
@@ -33,6 +36,7 @@ export default {
  
   
 }
+
 </script>
 
 <style lang="scss" scoped>
