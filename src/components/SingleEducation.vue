@@ -1,7 +1,6 @@
 <template>
-
     <div class="row">
-      <div @click="showBody = !showBody" class="col-sm-12 col-md-7 col-lg-6 text-center project">
+      <div @click="showBody = !showBody" class="col-sm-12 col-md-7 col-lg-6 project">
         <div class="title">{{education.title}}</div>
         <!-- <p> {{snippet}}</p> -->
         <div class="icons">
@@ -41,7 +40,13 @@ export default {
 }
 </script>
 
-<style lang="scss" scope>
+<style lang="scss" scoped>
+
+.project{
+    width: 300px;
+    margin-left: 50%;
+}
+
 
 
 </style>

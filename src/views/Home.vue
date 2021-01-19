@@ -13,7 +13,7 @@
   
       <div class="video-container">
       <video autoplay loop muted id="videoBG">
-        <source src="../assets/video/hav.mp4" type="video/mp4" >
+        <source src="../assets/video/sun.mp4" type="video/mp4" >
       </video>
       </div>
       </div>

@@ -89,8 +89,8 @@ export default {
 
                 .menu-btn{
                     cursor: pointer;
-                    border-radius: 50%;
-                    border: solid 1px rgb(25, 24, 24);;
+                    // border-radius: 50%;
+                    border: none;
                     background: none;
                     height: 45px;
                     width: 45px;
@@ -99,7 +99,8 @@ export default {
                     position: fixed;
                     z-index: 1;
                     top:8px;
-                    left: 5px;
+                    left: 3px;
+                    outline: none;
                     
                 }
                 

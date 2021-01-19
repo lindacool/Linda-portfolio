@@ -74,7 +74,7 @@ export default {
 
 <style lang="scss" scoped>
 .background {
-  background-color: #4f4f4f;
+  background-color: white;
   height: 100vh;
 
       .left{
@@ -84,7 +84,7 @@ export default {
           color: $workText;
           font-size: 22px;
           text-transform: uppercase;
-          font-family: 'Noto Serif', serif;
+          font-family: 'Prata', serif;
           font-weight: 200;
 
           @include medium {

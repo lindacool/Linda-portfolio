@@ -2,7 +2,7 @@
  <div class="background">
     <div class="row">
         <div class="left col-sm-12 col-md-6 col-lg-6 text-center p-0 m-0">
-            <h3 class="">Jobs</h3>
+            <h3 class="header">Jobs</h3>
             <div v-if="job.length">
                 <JobList :job="job" />
             </div>
@@ -10,7 +10,7 @@
                 <Spinner />
             </div>
 
-                <h3 class="">Education</h3>
+                <h3 class="header">Education</h3>
                 <div v-if="education.length">
                     <EducationList :education="education" />
                 </div>
@@ -50,3 +50,16 @@ export default {
 
 }
 </script>
+
+<style lang="scss">
+
+
+.background{
+    .header{
+        font-family: 'Prata';
+        margin: 20px 0
+    }
+}
+
+    
+</style>

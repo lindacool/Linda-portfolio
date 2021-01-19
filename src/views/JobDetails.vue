@@ -8,8 +8,6 @@
           <p>{{job.details}}</p>
         </div>
       </div>
-
-    
   </div>
 </div>
 
