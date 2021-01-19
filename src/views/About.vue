@@ -20,7 +20,8 @@
 <style lang="scss" scoped>
 
 .background {
-    background-image: url('../assets/img/linda.jpeg');
+    // background-image: url('../assets/img/linda.jpeg');
+    background-color: #f4f0ec;;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -36,39 +37,7 @@
     justify-content: center;
     overflow: hidden;
 
-    .about{
-      text-align: center;
-      font-size: 2rem;
-      color:white;
-      background-color: rgba(0,0,0,0.4);
-      box-shadow: 1px 2px 2px 1px rgba(0,0,0,0.4);
-      z-index: 1;
-      height: 700px;
-      width: 310px;
-      padding: 20px;
-      margin-left: 42px;
-
-        @include medium {
-                padding: 70px;
-            }
-      .aboutMe
-      {
-         text-transform: uppercase;
-          font-weight: 400;
-        
-       
-         @include medium {
-                font-size: 3rem;
-            }
-      }
-      .education{
-        font-size: 1.1rem;
-        padding-top: 2px;
-         @include medium {
-                font-size: 2rem;
-            }
-      }
-
+    
       .line{
         border-bottom: 1px solid white;
         width: 50px;
@@ -80,9 +49,6 @@
     }
 
   }
-    
-
-}
 
 
 

@@ -3,7 +3,7 @@
   <div class="row">
       <div class="left col-sm-12 col-md-6 col-lg-6 d-flex p-0 m-0">
         <div class="contact m-0 ">
-         <div class="uppercase">Contact</div>
+         <div class="uppercase">Say Hi!</div>
         </div>
        
       </div>
@@ -11,12 +11,9 @@
 
       <div class="right col-sm-12 col-md-6 col-lg-6">
         <div class="contact-me">
-          
-          <div class="uppercase">Contact
-          </div>
-          <div class="contact">076-8222455</div>
-          <div class="contact">Stockholm</div>
-          <div class="contact">Linda.andersson@Medinstitutet.se</div> 
+          <div class="contact"> <span class="material-icons">call</span> 076-8222455</div>
+          <div class="contact"> <span class="material-icons">room</span> Stockholm</div>
+          <div class="contact"><span class="material-icons">email</span> Linda.andersson@Medinstitutet.se</div> 
         </div>
 
 
@@ -37,7 +34,7 @@ export default {
 
 .background {
     // background-image: url('../assets/img/linda.jpeg');
-    background-color: rgb(49, 48, 48);
+    background-color: rgba(#919891, 0.8);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -48,11 +45,11 @@ export default {
        
 
         .contact{
-          font-family: $fontFamily;
+          font-family: 'Prata', serif;
           font-size: 400;
           padding-top:300px;  
           padding-left: 30%;
-          color:white;
+          color:black;
           font-size: 60px;
           font-weight: 200;
 
@@ -73,13 +70,14 @@ export default {
       
       .right{
          .contact-me{
+           font-size: 25px;
            .uppercase
            {
             text-transform: uppercase;
             padding: 20px 0px 10px 0px;
            }
           
-          color:white;
+          color:black;
           padding-left: 30%;
           
 

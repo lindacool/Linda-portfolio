@@ -3,7 +3,9 @@
     <!-- ref tells vue that i want to have a reference in memory to this DOM-element. I can accent whenever i want -->
     <ul ref="nav">
             <div class="image-logo" @click="toggleNav">
-                <span class="material-icons">menu</span>
+                <button class="menu-btn"> <span class="material-icons">
+menu
+</span></button>
             </div>
 
         
@@ -52,9 +54,9 @@ export default {
             margin-block-end: 0;
             padding-inline-start: 0;   
             color: rgba(247, 244, 244);
-            left: -150px;
+            left: -145px;
             transition: 300ms ease-in;
-            top: 0px;
+            top: 7px;
             z-index:1;
              cursor: pointer;
     
@@ -72,22 +74,40 @@ export default {
     }
 
     .material-icons{
-        color: rgb(247, 244, 244);
-         margin-left: 6px;
+        color: rgb(191, 190, 190);
+         margin: 2px;
          font-size: 28px;
+
+          @include medium {
+            font-size: 34px;
+            margin-left: -1px;
+            }
     }
     
       
         .image-logo{
-                cursor: pointer;
-                position: fixed;
-                z-index: 1;
-                top:10px;
-                left: 1px;
+               
+
+                .menu-btn{
+                    cursor: pointer;
+                    border-radius: 50%;
+                    border: solid 1px rgb(191, 190, 190);
+                    background: none;
+                    height: 45px;
+                    width: 45px;
+                    color: white;
+                    font-size: 10px;
+                    position: fixed;
+                    z-index: 1;
+                    top:8px;
+                    left: 5px;
+                    
+                }
+                
+
+               
                 }
             }
-    
-            
         
             :hover{
                 color: gray;
@@ -102,13 +122,22 @@ export default {
                 margin: 10px 5px 10px 10px;
                 justify-content: space-between;
                 font-weight: 200;
-                color: rgba(247, 244, 244);
+                color: rgb(191, 190, 190);
+
+                @include medium {
+                    font-size: 23px;
+                }
             
     
                 i{
                     margin-right: 7px;
                     font-size: 20px;
-                    color: rgb(247, 244, 244);
+                    color: rgb(191, 190, 190);
+
+                    @include medium {
+                        font-size: 25px;
+                        margin-right: 4px;
+                    }
                 }
                 
             }

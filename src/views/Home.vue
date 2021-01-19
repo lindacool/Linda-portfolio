@@ -5,7 +5,7 @@
         <div class="section">
 
       <div class="myName">
-        <p class="Name"> {{title}}</p>
+        <p class="name"> {{title}}</p>
        <div class="line"></div>
         <p class="education">{{body}}</p>
        <vue-typer text='Hello'></vue-typer>
@@ -13,7 +13,7 @@
   
       <div class="video-container">
       <video autoplay loop muted id="videoBG">
-        <source src="../assets/video/sun.mp4" type="video/mp4" >
+        <source src="../assets/video/hav.mp4" type="video/mp4" >
       </video>
       </div>
       </div>
@@ -57,17 +57,15 @@ export default {
       color:white;
       border: white solid 1px;
       z-index: 1;
-      padding: 20px;
+      padding: 30px;
       opacity: 0.8;
-      margin-left: 42px;
 
         @include medium {
                 padding: 70px;
             }
-      .Name
+      .name
       {
          text-transform: uppercase;
-          font-weight: 400;
           font-size: 1.5rem;
        
          @include medium {
@@ -86,7 +84,7 @@ export default {
         border-bottom: 1px solid white;
         width: 50px;
         margin: 20px;
-        margin-left: 40%;
+        margin-left: 35%;
       }
 
         

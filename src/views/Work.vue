@@ -74,6 +74,8 @@ export default {
 
 <style lang="scss" scoped>
 .background {
+  background-color: #4f4f4f;
+  height: 100vh;
 
       .left{
       
@@ -103,7 +105,7 @@ export default {
             display: flex;
             flex-direction: column;
             text-align: center;
-             border: none;
+            border: none;
             margin: 0px;
              
 
@@ -121,6 +123,8 @@ export default {
                text-align: center;
                border: none;
                transition: transform 2s;
+                width: 300px;
+               height: 250px;
                margin-left:70px;
                margin-top: 5px;
                 
