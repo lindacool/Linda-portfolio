@@ -2,14 +2,17 @@
 <div class="background">
   <div class="row">
       <div class="left col-sm-12 col-md-6 col-lg-6 d-flex p-0 m-0">
-        <div class="contact m-0 ">Contact</div>
+        <div class="contact m-0 ">
+         <div class="uppercase">Contact</div>
+        </div>
+       
       </div>
       <div class="styling-box"></div>
 
       <div class="right col-sm-12 col-md-6 col-lg-6">
         <div class="contact-me">
           
-          <div class="uppercase">Contact Details
+          <div class="uppercase">Contact
           </div>
           <div class="contact">076-8222455</div>
           <div class="contact">Stockholm</div>
@@ -33,8 +36,8 @@ export default {
 <style lang="scss" scoped>
 
 .background {
-    background-image: url('../assets/img/linda.jpeg');
-    background-color: rgb(158, 157, 157);
+    // background-image: url('../assets/img/linda.jpeg');
+    background-color: rgb(49, 48, 48);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;

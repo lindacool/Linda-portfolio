@@ -3,9 +3,7 @@
     <!-- ref tells vue that i want to have a reference in memory to this DOM-element. I can accent whenever i want -->
     <ul ref="nav">
             <div class="image-logo" @click="toggleNav">
-            <div class="ham"></div>
-            <div class="ham-short"></div>
-            <div class="ham"></div>
+                <span class="material-icons">menu</span>
             </div>
 
         
@@ -42,9 +40,6 @@ export default {
 <style lang="scss">
 
 #nav{
-
-    height: 40px;
-    width: 100%;
     z-index:1;
     
             
@@ -59,19 +54,21 @@ export default {
             background-color: white;
             left: -150px;
             transition: 300ms ease-in;
-            top: 40px;
+            top: 0px;
             z-index:1;
+             cursor: pointer;
     
                 &.active{
                     left:0px;
                 }
-
-                .nav-links{
-                    top:60px;
-                }
+            .nav-links{
+                margin-top:70px;
+            }
+               
                 li{ width: 100%;
                     padding-left: 0;
                     padding-right: 0;
+                    
                    
     }
     
@@ -83,21 +80,20 @@ export default {
                 top:1px;
                 left: 1px;
 
-                .ham {
+            //     .ham {
                 
-                width: 40px;
-                margin: 7px 0px 7px 0px;
-                border-bottom: 3px solid;
-                border-radius: 25px;
+            //     width: 35px;
+            //     margin: 7px 0px 7px 0px;
+            //     border-bottom: 2px solid black;
+            //     border-radius: 25px;
 
-            }
-            .ham-short {
-                width: 30px;
-                margin: 7px 0px 7px 0px;
-                border-bottom: 3px solid;
-                border-radius: 25px;
+            // }
+            // .ham-short {
+            //     width: 25px;
+            //     border-bottom: 2px solid black;
+            //     border-radius: 25px;
 
-            }
+            // }
                 }
             }
     

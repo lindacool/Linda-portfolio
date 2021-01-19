@@ -2,14 +2,63 @@
  <div class="background">
   <div class="row">
       <div class="left col-12  p-0 m-0">
-          <div class="contact m-0 text-center ">Work</div>
+          <div class="contact m-0">Work</div>
+          <div class="line"></div>
           <div class="my-work">
             <div class="work card">
-              <h3>Logotyp</h3>
+               <img src="../assets/img/webbyra-vit.jpg" alt="">
+             <figure>
+                <figcaption>
+                  <h1>Logtyp</h1>
+                  <p>lorem ipsum</p>
+                </figcaption>
+              </figure>
             </div>
-            <div class="work"></div>
-            <div class="work"></div>
-            <div class="work"></div>
+             <div class="work card">
+                <img src="../assets/img/webbyra-vit.jpg" alt="">
+             <figure>
+                <figcaption>
+                  <h1>Logtyp</h1>
+                  <p>lorem ipsum</p>
+                </figcaption>
+              </figure>
+            </div>
+             <div class="work card">
+               <img src="../assets/img/webbyra-vit.jpg" alt="">
+             <figure>
+                <figcaption>
+                  <h1>Logtyp</h1>
+                  <p>lorem ipsum</p>
+                </figcaption>
+              </figure>
+            </div>
+             <div class="work card">
+               <img src="../assets/img/webbyra-vit.jpg" alt="">
+             <figure>
+                <figcaption>
+                  <h1>Logtyp</h1>
+                  <p>lorem ipsum</p>
+                </figcaption>
+              </figure>
+            </div>
+             <div class="work card">
+               <img src="../assets/img/webbyra-vit.jpg" alt="">
+             <figure>
+                <figcaption>
+                  <h1>Logtyp</h1>
+                  <p>lorem ipsum</p>
+                </figcaption>
+              </figure>
+            </div>
+             <div class="work card">
+               <img src="../assets/img/webbyra-vit.jpg" alt="">
+             <figure>
+                <figcaption>
+                  <h1>Logtyp</h1>
+                  <p>lorem ipsum</p>
+                </figcaption>
+              </figure>
+            </div>
           </div>
       </div>
       <div class="styling-box"></div>
@@ -25,20 +74,26 @@ export default {
 
 <style lang="scss" scoped>
 .background {
-    
+
       .left{
       
         .contact{
           padding-top:30px;  
-          text-align: center;
+          padding-left: 90px;
           color: $workText;
           font-size: 70px;
           font-weight: 200;
-          padding-left: 20px;
+          text-transform: uppercase;
 
           @include medium {
-                
-            font-size: 150px;
+            font-size: 120px;
+            padding-left: 200px;
+            
+            }
+             @include large {
+            font-size: 120px;
+            text-align: center;
+            padding: 0px;
             
             }
          
@@ -48,26 +103,85 @@ export default {
             display: flex;
             flex-direction: column;
             text-align: center;
+             border: none;
+            margin: 0px;
 
                @include medium {
                  flex-direction: row;
                   flex-wrap: wrap;
-                  margin-left: 9%;
+                  margin-left: 5%;  
+              }
 
+               @include large {
+                margin-left: 7%;  
             
             }
             .card{
-               background-image: url('../assets/img/webbyra-vit.jpg');
-               background-size: cover;
-               background-color: rgb(130, 130, 130);
-               background-blend-mode: multiply;
                text-align: center;
-               position: relative;
+               border: none;
                transition: transform 2s;
+               margin-left:70px;
+           
+               margin-top: 5px;
+                
 
-               & :hover {
-                 transform: scale(1.2)
+                @include medium {
+                  width: 250px;
+                  height: 250px;
+
+                }
+                @include large {
+                  width: 500px;
+                  height: 450px;
+                   margin: 0px;
+                  padding: 2px;
+               
+            
+            
+            }
+
+               img{
+               background-size: cover;
+               width: 300px;
+               height: 250px;
+              
+
+                @include medium {
+                  width: 300px;
+                  height: 250px;
+
+                }
+                  @include large {
+                  width: 500px;
+                  height: 450px;
+                 padding: 2px;
+
+               
+            
+            }
                }
+
+               
+
+          figure{
+
+              & :hover{
+                  opacity: 1;
+                }
+
+               figcaption{
+                position:absolute;
+                text-align: center;
+                top: 20px;
+                left: 20px;
+                bottom: 20px;
+                right: 20px;
+                background: rgba(0,0,0,0.5);
+                opacity: 0;
+                transition:  .5s;
+
+              }
+                
             }
 
           
@@ -94,7 +208,56 @@ export default {
           }
         
       }
+// ul{
+//       //   margin: 10px;
+//       //   padding: 0;
+//       //   width: 1200px;
+//       //   display: flex;
+//       //   flex-direction: column;
 
-    
+//       //   li{
+//       //     list-style: none;
+
+//       //     .imageBox{
+           
+//       //       padding-bottom: 10px;  
+
+//       //       figure{
+//       //         position: relative;
+//       //         margin: 0;
+//       //         padding: 0;
+//       //         overflow: hidden;
+
+//       //         & :hover{
+//       //             opacity: 1;
+//       //           }
+
+//       //          figcaption{
+//       //           position:absolute;
+//       //           text-align: center;
+//       //           top: 20px;
+//       //           left: 20px;
+//       //           bottom: 20px;
+//       //           right: 20px;
+//       //           background: blanchedalmond;
+//       //           opacity: 0;
+//       //           transition:  .5s;
+
+//       //         }
+                
+
+//       //       img{
+//       //          width: 400px;
+//       //         height: 285px;
+
+             
+//       //       }
+//       //       }
+//       //     }
+//       //   }
+//       // }
+
+      }
 }
+
 </style>
