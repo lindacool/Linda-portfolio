@@ -8,25 +8,25 @@
       </div>
 
       <div class="right col-sm-12 col-md-6 col-lg-6">
-        <div class="contact-me">
-          <div class="contact"> 
+        <ul class="contact-me">
+          <li class="contact"> 
             <span class="material-icons">call</span>
            076-8222455
-          </div>
+          </li>
 
-          <div class="contact">
+          <li class="contact">
             <span class="material-icons">room</span> 
-            Stockholm
-          </div>
-          <div class="contact">
+              Stockholm 
+          </li>
+          <li class="contact">
             <a class="send-mail" href="mailto:linda.andersson@medieinstitutet.se">
             <span class="material-icons">
             email
             </span> 
             Linda.andersson@medinstitutet.se
             </a>
-          </div>
-        </div>
+          </li>
+        </ul>
 
 
       </div>
@@ -83,6 +83,7 @@ export default {
             font-size: 15px;
             padding-top: 10px;
             justify-content: center;
+            list-style: none;
 
             @include medium {
             padding-top:500px;
@@ -96,11 +97,15 @@ export default {
                
             }
             .material-icons{
-              font-size: 20px;
-              padding: 10px 0 0 0;
+              font-size: 16px;
+              padding: 10px;
 
             @include medium{
-              font-size: 30px;
+              font-size: 20px;
+            }
+
+            .sthlm{
+              margin-bottom: 20px;
             }
             }
 

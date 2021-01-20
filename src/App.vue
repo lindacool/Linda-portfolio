@@ -10,9 +10,9 @@
 </div>
 <!-- // Fade in animation -->
 <transition
-  mode="out-in"
-  enter-active-class="animate__animated animate__zoomInRight delay"
-  leave-active-class="animate__animated animate__zoomOutLeft"
+  mode="in-out"
+ enter-active-class="animate__animated animate__fadeIn delay"
+ leave-active-class="animate__animated animate__fadeOut"
 >
   <router-view/>
 </transition>
