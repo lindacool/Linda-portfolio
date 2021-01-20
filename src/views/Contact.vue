@@ -71,7 +71,11 @@ export default {
               padding-left: 40%;
                
             }
+        
+            
         }
+        
+
         
       }
       

@@ -1,11 +1,10 @@
 <template>
 <div class="background">
   <div class="row">
-     <div class="left col-12  p-0 m-0">
+     <div class="left col-12  col-lg-2 p-0 m-0">
           <div class="contact m-0">Work</div>
-
      </div>
-      <div class="right col-sm-12 col-md-12 col-lg-12">
+      <div class="right col-sm-12 col-md-12 col-lg-10">
         <div class="row">
           <div class="my-work">
             <div v-for="project in projects" :key="project.name" class="work card">
@@ -16,7 +15,10 @@
                 <figcaption>
                   <p class="title">{{project.title}}</p>
                   <p class="body">{{project.discript}}</p>
+
+                  <div class="icons">
                   <a :href="project.github"><span class="material-icons">code</span></a>
+                  </div>
                 </figcaption>
               </figure>
             </div>
@@ -42,37 +44,37 @@ data(){
         title: 'something',
         discript: 'hello',
         github: '',
-        img: 'https://raw.githubusercontent.com/lindacool/Webbshop-GECKO/master/public/assets/Logo-gecko.png'
+        img: 'https://i.pinimg.com/564x/4e/3e/f5/4e3ef5c03c40ee9d2cb9b2331922f1d4.jpg'
       },
        {
         title: 'something else',
         discript: 'hello',
         github: 'https://github.com/lindacool/Webbshop-GECKO.git',
-        img: 'https://raw.githubusercontent.com/lindacool/Webbshop-GECKO/master/public/assets/Logo-gecko.png'
+        img: 'https://i.pinimg.com/474x/4a/65/ab/4a65ab1b3430699ab71c708f2a3983aa.jpg'
       },
         {
         title: 'something',
         discript: 'hello',
         github: '',
-        img: 'https://raw.githubusercontent.com/lindacool/webbshop---Kings-of-norrland/master/img/bakgrundoheader/bakgrund2.jpg'
+        img: 'https://i.pinimg.com/474x/e1/1a/f8/e11af8dad7c3297e0aaba0cbdf05a360.jpg'
       },
        {
         title: 'something',
         discript: 'hello',
         github: '',
-        img: 'https://raw.githubusercontent.com/lindacool/webbshop---Kings-of-norrland/master/img/bakgrundoheader/bakgrund2.jpg'
+        img: 'https://i.pinimg.com/474x/a2/91/45/a2914594d79bdab8be667c959a8c08df.jpg'
       },
       {
         title: 'something',
         discript: 'hello',
         github: '',
-        img: 'https://raw.githubusercontent.com/lindacool/webbshop---Kings-of-norrland/master/img/bakgrundoheader/bakgrund2.jpg'
+        img: 'https://i.pinimg.com/474x/3d/96/47/3d964746c244c48e0925e081d7a6b55b.jpg'
       },
       {
         title: 'something',
         discript: 'hello',
         github: '',
-        img: 'https://raw.githubusercontent.com/lindacool/webbshop---Kings-of-norrland/master/img/bakgrundoheader/bakgrund2.jpg'
+        img: 'https://i.pinimg.com/474x/12/e8/c9/12e8c9763cf65f01a2e058c68fcef3db.jpg'
       },
     ]
     
@@ -85,14 +87,16 @@ data(){
 
 <style lang="scss" scoped>
 .background {
+
+
       .left{
 
         .contact{
           font-family: 'Prata', serif;
           font-size: 400;
-          padding-top:90px;  
-          padding-left: 25%;
-          color:black;
+          padding-top:50px;  
+          padding-left: 30%;
+          color:#ac8468;
           font-size: 60px;
           font-weight: 200;
 
@@ -103,11 +107,13 @@ data(){
                
             }
             @include large {
-              padding-top: 20px;
-              padding-left: 45%;
+              padding-top: 100px;
+              padding-left: 50%;
               
                
             }
+
+            
         }
         
       }
@@ -116,7 +122,6 @@ data(){
         .my-work{
             display: flex;
             flex-direction: column;
-            text-align: center;
             border: none;
             margin: 0px;
             margin-left: 100px;
@@ -125,11 +130,12 @@ data(){
                @include medium {
                  flex-direction: row;
                   flex-wrap: wrap;
-                  margin-left: 110px;  
+                  margin-left: 90px;  
               }
 
                @include large {
-                 margin-left: 15%;  
+                 margin-left: 10%; 
+                 margin-top: 55px;
                
             
             }
@@ -141,14 +147,12 @@ data(){
                
 
                 @include medium {
-                  width: 300px;
-                  height: 250px;
-                  padding: 5px;
+                 padding-left:10px;
                 
 
                 }
                 @include large {
-                 
+                  padding-left:5px;
             
             }
 
@@ -184,7 +188,8 @@ data(){
 
                figcaption{
                 position:absolute;
-                text-align: center;
+                text-align: left;
+                padding: 20px;
                 top: 10px;
                 left: 5px;
                 bottom: 20px;
@@ -195,10 +200,25 @@ data(){
 
                  @include medium {
                    margin-left: 20px;
-                    right: 0px;
+                    right: 10px;
+                    top: 10px;
+                    left: 0px;
+                    bottom: 25px;
+              
               }
-                 @include large {
-                    
+              .title{
+                 font-family: 'Prata', serif;
+                 font-size: 15px;
+              }
+              .body{
+                font-size: 12px;
+              }
+              .material-icons{
+                margin-top: 80px;
+                color: white;
+                font-size: 22px;
+
+                a{ color: white;}
               }
 
               }
