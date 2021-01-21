@@ -55,19 +55,40 @@ export default {
             padding-inline-start: 0;   
             left: -145px;
             transition: 300ms ease-in;
-            top: 7px;
+            list-style: none;
+            top: 0px;
             z-index:1;
              cursor: pointer;
     
                 &.active{
-                    left:0px;
+                    left:0%;
+                    background-color: beige;
+                    width: 100vw;
+                    top:0;
+
+                     @include medium {
+                    width: 40vw;
+                    top:0;
+                    }
+                    @include medium {
+                    width: 25vw;
+               
+                    }
+
+
+
+                    .nav-links{
+                        padding: 20px;
+                    }
                 }
             .nav-links{
+                padding-top: 20px;
                 margin-top:50px;
+                
             }
                
                 li{ width: 100%;
-                    padding-left: 0;
+                    padding-left: 1px;
                     padding-right: 0;    
                    
     }

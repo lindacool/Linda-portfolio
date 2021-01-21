@@ -1,4 +1,4 @@
-<template>
+<template >
 <div class="background">
   <div class="row">
       <div class="left col-sm-12 col-md-6 col-lg-6 d-flex p-0 m-0">
@@ -6,36 +6,46 @@
          <div class="uppercase">Say Hi!</div>
         </div>  
       </div>
-
       <div class="right col-sm-12 col-md-6 col-lg-6">
-        <ul class="contact-me">
-          <li class="contact"> 
-            <span class="material-icons">call</span>
-           076-8222455
-          </li>
+        <section>
+          <transition name="bunce">
+              <ul class="contact-me">
+            <li class="contact"> 
+              <span class="material-icons">call</span>
+            076-8222455
+            </li>
 
-          <li class="contact">
-            <span class="material-icons">room</span> 
-              Stockholm 
-          </li>
-          <li class="contact">
-            <a class="send-mail" href="mailto:linda.andersson@medieinstitutet.se">
-            <span class="material-icons">
-            email
-            </span> 
-            Linda.andersson@medinstitutet.se
-            </a>
-          </li>
-        </ul>
+            <li class="contact">
+              <span class="material-icons">room</span> 
+                Stockholm 
+            </li>
+            <li class="contact">
+              <a class="send-mail" href="mailto:linda.andersson@medieinstitutet.se">
+              <span class="material-icons">
+              email
+              </span> 
+              Linda.andersson@medinstitutet.se
+              </a>
+            </li>
+          </ul>
+          </transition>
 
-
+        </section>
       </div>
+  
   </div>
   </div>
 </template>
 
 <script>
 export default {
+
+    data () {
+      return {
+        bounce: false
+      }
+    }
+  
 
 
 
@@ -81,7 +91,7 @@ export default {
       
       .right{
         padding: 0;
-         .contact-me{
+            .contact-me{
             color:black;
             padding-left: 25%;
             font-size: 15px;
@@ -124,8 +134,10 @@ export default {
            }
 
          }
+        }
+       
       }
  
-}
+
 
 </style>

@@ -11,8 +11,8 @@
 <!-- // Fade in animation -->
 <transition
   mode="in-out"
- enter-active-class="animate__animated animate__fadeIn delay"
- leave-active-class="animate__animated animate__fadeOut"
+  enter-active-class="animate__animated animate__fadeIn delay"
+  leave-active-class="animate__animated animate__fadeOut delay"
 >
   <router-view/>
 </transition>

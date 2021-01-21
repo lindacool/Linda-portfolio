@@ -5,7 +5,19 @@
         <div class="section">
 
       <div class="myName">
-        <p class="name"> {{title}}</p>
+        <p class="name"><vue-typer
+        :text='["Front end developer"]'
+        :repeat='Infinity'
+        :shuffle='true'
+        initial-action='erasing'
+        :pre-type-delay='70'
+        :type-delay='70'
+        :pre-erase-delay='2000'
+        :erase-delay='250'
+        erase-style='clear'
+        :erase-on-complete='false'
+        caret-animation='expand'
+      ></vue-typer></p>
        <div class="line"></div>
         <p class="education">{{body}}</p>
        <vue-typer text='Hello'></vue-typer>
@@ -13,7 +25,7 @@
   
       <div class="video-container">
       <video autoplay loop muted id="videoBG">
-        <source src="../assets/video/sun.mp4" type="video/mp4" >
+        <source src="../assets/video/hav.mp4" type="video/mp4" >
       </video>
       </div>
       </div>
@@ -41,8 +53,8 @@ export default {
 
 <style lang="scss" scoped>
 
-
   .section{
+    font-family: 'Prata' 'serif';
     position: relative;
     width: 100%;
     height: 100vh;
@@ -54,8 +66,8 @@ export default {
     .myName{
       text-align: center;
       font-size: 2rem;
-      color:white;
-      border: white solid 1px;
+      color:black;
+      border: black solid 1px;
       z-index: 1;
       padding: 30px;
       opacity: 0.8;
@@ -66,6 +78,7 @@ export default {
       .name
       {
          text-transform: uppercase;
+         font-family: 'Prata' 'serif';
           font-size: 1.5rem;
        
          @include medium {
