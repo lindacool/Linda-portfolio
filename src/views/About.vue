@@ -12,7 +12,6 @@
             <div class="image"></div>
          </div>
          <div class="line"></div>
-         
         <div class="about-me">
           "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia.
         </div>
@@ -31,11 +30,10 @@
 </template>
 
 
-
 <style lang="scss" scoped>
 .background {
     // background-image: url('../assets/img/linda.jpeg');
-    background-color: #f4f0ec;;
+    background-color: #f5ede6;;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -43,8 +41,6 @@
     width: 100%;
     
       .left{
-
-       
 
         .about{
           font-family: 'Prata', serif;
@@ -62,7 +58,7 @@
                
             }
             @include large {
-              padding-top: 300px;
+              padding-top: 250px;
               padding-left: 40%;
                
             }
@@ -89,7 +85,7 @@
          .about-me{
           font-size: 12px;
           text-align: right;
-          padding-left: 30px;
+          padding-left: 50px;
           color:black;
           width: 360px;
 
@@ -99,8 +95,8 @@
               
             }
                @include large {
-                padding-top: 20px;
-               width: 400px;
+                padding-top: 0px;
+                width: 400px;
   
             }
           
@@ -109,13 +105,15 @@
         .about-me-today{
           font-size: 12px;
           text-align: right;
-          padding-left: 30px;
+          padding-left: 50px;
           color:black;
           width: 360px;
+          // visibility: hidden;
 
           @include large {
                 
                width: 400px;
+               
   
           }
           p
@@ -124,11 +122,11 @@
           font-size: 15px;
           text-align: right;
           color:black;
-          width: 325px;
+          width: 310px;
           margin: 15px 0 5px 0;
             @include large {
                 
-               width: 365px;
+               width: 350px;
   
           }
         }
@@ -145,7 +143,7 @@
             .image{
 
               @include medium {
-              background-image: url('../assets/img/linda.jpeg');
+              background-image: url('../assets/img/ullis.jpeg');
               background-position: center;
               background-repeat: no-repeat;
               border-radius: 1%;
@@ -159,7 +157,7 @@
             }
 
              @include large {
-              margin-top: 50px;
+              margin-top: 30px;
               width: 350px;
               height: 253px;
               margin-left: 20px;

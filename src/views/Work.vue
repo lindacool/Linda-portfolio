@@ -17,7 +17,10 @@
                   <p class="body">{{project.discript}}</p>
 
                   <div class="icons">
-                  <a :href="project.github"><span class="material-icons">code</span></a>
+                  <a :href="project.github" target="_blank"><span class="material-icons">code</span></a>
+                  <button class="btn"> <span class="material-icons">
+            more_horiz
+            </span></button>
                   </div>
                 </figcaption>
               </figure>
@@ -41,38 +44,38 @@ data(){
     
     projects: [
       {
-        title: 'something',
-        discript: 'hello',
+        title: 'My Project',
+        discript: 'Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. ',
         github: '',
         img: 'https://i.pinimg.com/564x/4e/3e/f5/4e3ef5c03c40ee9d2cb9b2331922f1d4.jpg'
       },
        {
-        title: 'something else',
-        discript: 'hello',
+        title: 'A project',
+        discript: 'Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. ',
         github: 'https://github.com/lindacool/Webbshop-GECKO.git',
         img: 'https://i.pinimg.com/474x/4a/65/ab/4a65ab1b3430699ab71c708f2a3983aa.jpg'
       },
         {
-        title: 'something',
-        discript: 'hello',
+        title: 'Something',
+        discript: 'Hed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. ',
         github: '',
         img: 'https://i.pinimg.com/474x/e1/1a/f8/e11af8dad7c3297e0aaba0cbdf05a360.jpg'
       },
        {
-        title: 'something',
-        discript: 'hello',
+        title: 'Something',
+        discript: 'Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. ',
         github: '',
         img: 'https://i.pinimg.com/474x/a2/91/45/a2914594d79bdab8be667c959a8c08df.jpg'
       },
       {
-        title: 'something',
-        discript: 'hello',
+        title: 'Something',
+        discript: 'Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. ',
         github: '',
         img: 'https://i.pinimg.com/474x/3d/96/47/3d964746c244c48e0925e081d7a6b55b.jpg'
       },
       {
-        title: 'something',
-        discript: 'hello',
+        title: 'Something',
+        discript: 'Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. ',
         github: '',
         img: 'https://i.pinimg.com/474x/12/e8/c9/12e8c9763cf65f01a2e058c68fcef3db.jpg'
       },
@@ -208,15 +211,25 @@ data(){
               }
               .title{
                  font-family: 'Prata', serif;
+                 color:honeydew;
                  font-size: 15px;
               }
               .body{
                 font-size: 12px;
               }
-              .material-icons{
-                margin-top: 80px;
+              .icons{
+                margin-top: 12px;
                 color: white;
                 font-size: 22px;
+
+                .btn{
+                  border-radius: 25%;
+                  border: solid white 1px;
+                  margin-left: 160px;
+                  padding: 0px 10px;
+                  font-size: 10px;
+                  color: white;
+                }
 
                 a{ color: white;}
               }

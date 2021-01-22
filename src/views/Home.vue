@@ -5,19 +5,7 @@
         <div class="section">
 
       <div class="myName">
-        <p class="name"><vue-typer
-        :text='["Front end developer"]'
-        :repeat='Infinity'
-        :shuffle='true'
-        initial-action='erasing'
-        :pre-type-delay='70'
-        :type-delay='70'
-        :pre-erase-delay='2000'
-        :erase-delay='250'
-        erase-style='clear'
-        :erase-on-complete='false'
-        caret-animation='expand'
-      ></vue-typer></p>
+        <p class="name">{{title}}</p>
        <div class="line"></div>
         <p class="education">{{body}}</p>
        <vue-typer text='Hello'></vue-typer>
@@ -41,8 +29,8 @@ export default {
     data() {
         
         return{
-            title: 'Linda Andersson',
-            body: 'Front end developer'
+            title: 'linda andersson',
+            body: 'front end developer'
         }
     }
  
@@ -54,7 +42,7 @@ export default {
 <style lang="scss" scoped>
 
   .section{
-    font-family: 'Prata' 'serif';
+    font-family: 'Prata', serif;
     position: relative;
     width: 100%;
     height: 100vh;
@@ -65,11 +53,9 @@ export default {
 
     .myName{
       text-align: center;
-      font-size: 2rem;
-      color:black;
-      border: black solid 1px;
+      border: honeydew solid 2px;
       z-index: 1;
-      padding: 30px;
+      padding: 20px;
       opacity: 0.8;
 
         @include medium {
@@ -79,6 +65,7 @@ export default {
       {
          text-transform: uppercase;
          font-family: 'Prata' 'serif';
+         color:honeydew;
           font-size: 1.5rem;
        
          @include medium {
@@ -88,16 +75,30 @@ export default {
       .education{
         font-size: 1.1rem;
         padding-top: 2px;
+        color:honeydew;
+        text-transform: uppercase;
          @include medium {
                 font-size: 2rem;
             }
       }
 
       .line{
-        border-bottom: 1px solid white;
+        border-bottom: 2px solid white;
+        opacity: 0.8;
         width: 50px;
         margin: 20px;
-        margin-left: 35%;
+        margin-left: 40%;
+
+          @include medium {
+                margin-left: 45%;
+                width: 70px;
+            }
+
+           @include large {
+                margin-left: 44%;
+                width: 70px;
+            }
+        
       }
 
         

@@ -3,18 +3,17 @@
   <div class="row">
       <div class="left col-sm-12 col-md-6 col-lg-6 d-flex p-0 m-0">
         <div class="contact m-0 ">
-         <div class="uppercase">Say Hi!</div>
+         <p class="uppercase">Say Hi!</p>
         </div>  
       </div>
       <div class="right col-sm-12 col-md-6 col-lg-6">
         <section>
-          <transition name="bunce">
+
               <ul class="contact-me">
             <li class="contact"> 
               <span class="material-icons">call</span>
             076-8222455
             </li>
-
             <li class="contact">
               <span class="material-icons">room</span> 
                 Stockholm 
@@ -28,7 +27,14 @@
               </a>
             </li>
           </ul>
-          </transition>
+          <div class="icones">
+            <a href="https://www.linkedin.com/in/linda-andersson-4901071a9/" target="_blank"><img src="https://img.icons8.com/fluent-systems-filled/22/000000/linkedin.png"/></a>
+           
+            <a href="https://github.com/lindacool" target="_blank">  <img src="https://img.icons8.com/material-sharp/22/000000/github.png"/></a>
+           
+
+          </div>
+
 
         </section>
       </div>
@@ -38,16 +44,14 @@
 </template>
 
 <script>
-export default {
 
+export default {
+  
     data () {
       return {
         bounce: false
       }
     }
-  
-
-
 
 }
 </script>
@@ -81,10 +85,8 @@ export default {
               padding-left: 40%;
                
             }
-        
             
         }
-        
 
         
       }
@@ -134,7 +136,55 @@ export default {
            }
 
          }
+         .icones{
+           margin-left: 220px;
+
+            @include medium{
+               margin-left: 150px;
+            }
+
+           img{
+             padding-right: 10px;
+            
+           }
+         }
         }
+        
+    p:hover {
+  -webkit-animation-name: wiggle;
+  -ms-animation-name: wiggle;
+  -ms-animation-duration: 1000ms;
+  -webkit-animation-duration: 1000ms;
+  -webkit-animation-iteration-count: 1;
+  -ms-animation-iteration-count: 1;
+  -webkit-animation-timing-function: ease-in-out;
+  -ms-animation-timing-function: ease-in-out;
+  cursor:default;
+}
+
+@-webkit-keyframes wiggle {
+  0% {-webkit-transform: rotate(10deg);}
+  25% {-webkit-transform: rotate(-10deg);}
+  50% {-webkit-transform: rotate(20deg);}
+  75% {-webkit-transform: rotate(-5deg);}
+  100% {-webkit-transform: rotate(0deg);}
+}
+
+@-ms-keyframes wiggle {
+  0% {-ms-transform: rotate(1deg);}
+  25% {-ms-transform: rotate(-1deg);}
+  50% {-ms-transform: rotate(1.5deg);}
+  75% {-ms-transform: rotate(-5deg);}
+  100% {-ms-transform: rotate(0deg);}
+}
+
+@keyframes wiggle {
+  0% {transform: rotate(10deg);}
+  25% {transform: rotate(-10deg);}
+  50% {transform: rotate(20deg);}
+  75% {transform: rotate(-5deg);}
+  100% {transform: rotate(0deg);}
+}
        
       }
  

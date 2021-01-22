@@ -3,12 +3,8 @@
     <!-- ref tells vue that i want to have a reference in memory to this DOM-element. I can accent whenever i want -->
     <ul ref="nav">
             <div class="image-logo" @click="toggleNav">
-                <button class="menu-btn"> <span class="material-icons">
-menu
-</span></button>
+                <!-- <button class="menu-btn"> <span class="material-icons">menu</span></button> -->
             </div>
-
-        
         <div class="nav-links">
         <li v-for="(link,index) in navLinks" 
         :key="index">
@@ -56,13 +52,13 @@ export default {
             left: -145px;
             transition: 300ms ease-in;
             list-style: none;
-            top: 0px;
+            top: 100px;
             z-index:1;
              cursor: pointer;
     
                 &.active{
                     left:0%;
-                    background-color: beige;
+                    background-color: honeydew;
                     width: 100vw;
                     top:0;
 
@@ -84,6 +80,7 @@ export default {
             .nav-links{
                 padding-top: 20px;
                 margin-top:50px;
+
                 
             }
                
@@ -94,7 +91,7 @@ export default {
     }
 
     .material-icons{
-        color: rgb(25, 24, 24);
+        color: rgb(2, 2, 2);
          margin: 2px;
          font-size: 28px;
 
@@ -131,7 +128,8 @@ export default {
             }
         
             :hover{
-                color: gray;
+                color: honeydew;
+               
             }
     
             a{

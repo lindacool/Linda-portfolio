@@ -1,13 +1,14 @@
 <template>
     <div class="row">
+
       <div @click="showBody = !showBody" class="col-sm-12 col-md-7 col-lg-6 project">
-        <div class="title">{{education.title}}</div>
-        <!-- <p> {{snippet}}</p> -->
-        <div class="icons">
-            <span class="material-icons">
-            keyboard_arrow_down
+          
+            <div class="title">{{education.title}}</div>
+            <div class="date">{{education.date}}</div>
+             <span class="material-icons">
+            more_horiz
             </span>
-        </div>
+       
         <div v-if="showBody" class="body">
             <p class="body">{{education.body}}</p>
         </div>
@@ -40,13 +41,7 @@ export default {
 }
 </script>
 
-<style lang="scss" scoped>
-
-.project{
-    width: 300px;
-    margin-left: 50%;
-}
-
+<style lang="scss" >
 
 
 </style>

@@ -4,9 +4,7 @@
   :nav-links="navLinks"
   :image-Path="require('./assets/img/ham.png')"
   backgorund="#fff"
-  />    
- 
-
+  /> 
 </div>
 <!-- // Fade in animation -->
 <transition
@@ -16,15 +14,13 @@
 >
   <router-view/>
 </transition>
- 
 </template>
 
 <script>
 import ProgrammicNavigation from './components/ProgrammicNavigation.vue'
-import Footer from './components/Footer'
 import Navbar from './components/Navbar.vue'
 export default {
-  components: { Navbar, Footer , ProgrammicNavigation },
+  components: { Navbar, ProgrammicNavigation },
   
 
   // Navliks to my navbar
@@ -67,5 +63,7 @@ export default {
 .delay{
   animation-delay: .5s;
 }
+
+
   
 </style>
